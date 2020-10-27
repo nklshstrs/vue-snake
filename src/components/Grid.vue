@@ -32,7 +32,7 @@
       return {
         request: '',
         gameRunning: false,
-        snakeSpeed: 3,
+        snakeSpeed: 4,
         snakeBody: [{ x: 11, y: 11 }],
         food: {},
         score: 0,
@@ -54,7 +54,7 @@
       },
       gameReset() {
         this.score = 0
-        this.snakeSpeed = 3
+        this.snakeSpeed = 4
         this.snakeBody = [{ x: 11, y: 11 }]
         this.food = this.getRandomFoodPosition()
         this.gameOver = false
@@ -78,7 +78,7 @@
         this.checkDeath()
       },
       updateSnakeSpeed() {
-        this.snakeSpeed = this.snakeSpeed + 0.33
+        this.snakeSpeed = this.snakeSpeed + 0.25
       },
       updateSnake() {
         this.addSegments()
